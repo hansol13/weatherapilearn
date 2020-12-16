@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple weather app</title>
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- d3.js link -->
+    <script src="https://d3js.org/d3.v6.min.js"></script> 
+</head>
+<body onload="init()">
+    <div class="container">
+        <div class="display-weather">
+            <h1 id="name">Weather App</h1>
+            <div><img src=".\weather-icons\png\128x128\chancerain.png" alt=""></div>
+            <p id="description">-description-</p>
+            <p id="temperature">-temperature-</p>
+            <div id="position">-position-</div>
+        </div>
+        
+
+        <div class="inputLocation">
+            <p>City Name</p>
+            <input type="text" id="inputValue" placeholder="city">
+            <input type="submit" id="submitButton" value="submit">
+        </div>
+
+        <div class="changeMode">
+            <p>--changeModeButton--</p>
+            <input type="submit" id="changeModeButton" value="°C">
+        </div>
+
+        <div class="trends">
+            <p>--trendviewer--</p>
+        </div>
+
+
+
+        
+    </div>
+    
+    
+    <script src="./app.js"></script>
+</body>
+</html>

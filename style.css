@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #404040;
+    color: white;
+}
+
+body{font-family: 'Roboto', sans-serif;}
+
+.container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "maindisplay maindisplay maindisplay"
+    "inputLocation changeMode trends";
+}
+
+.display-weather{
+    grid-area: maindisplay;
+    text-align: center;
+    background-color: beige;
+}
+
+.inputLocation{
+    grid-area: inputLocation;
+    text-align: center;
+    border: 1px dashed black;
+}
+
+input[type="text"]{
+    height: 20px;
+    width: 80%;
+    background: #b3b3b3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5%;
+    border: none;
+    padding: 10px 10px;
+}
+
+input[type="submit"]{
+    height: 20px;
+    width: 100px;
+    background: #b3b3b3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5%;
+}
+
+.changeMode{
+    grid-area: changeMode;
+    border: 1px dashed black;
+    text-align: center;
+}
+
+#changeModeButton{
+    width: 80px;
+    height:40px
+}
+
+.trends{
+    grid-area: trends;
+    border: 1px dashed black;
+}
+
